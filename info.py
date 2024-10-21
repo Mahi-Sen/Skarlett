@@ -40,7 +40,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '6433510598').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '6433510598').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '') #Channel / Group Id for force sub ( make sure bot is admin )
+auth_channel = environ.get('AUTH_CHANNEL', '-1002160003714') #Channel / Group Id for force sub ( make sure bot is admin )
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -70,7 +70,7 @@ TUTORIAL = environ.get('TUTORIAL', 'https://t.me/HOW_TO_DOWNLOAD_MAHI/8')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ʜᴀᴘᴘʏ ᴇɴᴊᴏʏᴍᴇɴᴛ ʙᴜᴅᴅʏ ❤️')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002029882072'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/THE_MAHI_KING')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/TheStrange77')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -104,8 +104,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://skarlett-f5a9a1df8661.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://skarlett-f5a9a1df8661.herokuapp.com/".format(FQDN, PORT)
+URL = "chosen-candie-msgal-a7e38a6b.koyeb.app/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "chosen-candie-msgal-a7e38a6b.koyeb.app/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -120,9 +120,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',True))
 if HAS_SSL:
-    URL = "https://skarlett-f5a9a1df8661.herokuapp.com/".format(FQDN)
+    URL = "chosen-candie-msgal-a7e38a6b.koyeb.app/".format(FQDN)
 else:
-    URL = "https://skarlett-f5a9a1df8661.herokuapp.com/".format(FQDN)
+    URL = "chosen-candie-msgal-a7e38a6b.koyeb.app/".format(FQDN)
     
 # add premium logs channel id
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002102964498'))
