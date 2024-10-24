@@ -1533,10 +1533,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ 💸', callback_data="shortlink_info"),
                     InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer')
-                ],[
-                    InlineKeyboardButton('☘️ ᴄᴏᴍᴍᴀɴᴅꜱ ☘️', callback_data='help'),
-                    InlineKeyboardButton('🕵️‍♂️ ᴀʙᴏᴜᴛ 🕵️‍♂️', callback_data='about')
-                ],[
+                ],
+#                   [
+#                    InlineKeyboardButton('☘️ ᴄᴏᴍᴍᴀɴᴅꜱ ☘️', callback_data='help'),
+#                    InlineKeyboardButton('🕵️‍♂️ ᴀʙᴏᴜᴛ 🕵️‍♂️', callback_data='about')
+#                ],
+                   [
                     InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
                   ]]
         
